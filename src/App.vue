@@ -1,22 +1,18 @@
-
 <template>
   <div>
-    <h1>
-      {{name}}
-    </h1>
+    <employee-table />
   </div>
 </template>
 
-<script lang="ts">
-  import Vue from "vue";
+<script>
+import EmployeeTable from './components/EmployeeTable'
 
-  export default Vue.extend({
-    data: function() {
-      return {
-        name: 'Hello World!',
-      }
-    },
-  });
+export default {
+  name: 'Hello World!',
+  components: {
+    EmployeeTable,
+  },
+}
 </script>
 
 <style>
