@@ -1,23 +1,19 @@
 <template>
   <div>
-    <employee-table />
+    <Home />
   </div>
 </template>
 
 <script>
-import EmployeeTable from './components/EmployeeTable'
+//import EmployeeTable from './components/EmployeeTable'
+import Home from './components/Home'
 
 export default {
   name: 'Hello World!',
   components: {
-    EmployeeTable,
+    Home,
   },
 }
 </script>
 
-<style>
-h1 {
-  color: white;
-  background-color: black;
-}
-</style>
+<style></style>
