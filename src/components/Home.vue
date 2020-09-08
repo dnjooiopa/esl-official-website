@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Welcome to Embedded System Laboratory</h1>
+    <img src="../assets/home-img.jpg" class="responsive" />
   </div>
 </template>
 
@@ -10,4 +10,9 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped>
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+</style>
