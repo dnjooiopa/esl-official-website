@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div class="navbar">
+    <div>
       <Navbar />
     </div>
-    <div class="home">
+    <div>
       <Home />
     </div>
   </div>
