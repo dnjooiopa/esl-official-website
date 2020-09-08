@@ -1,7 +1,11 @@
 <template>
   <div>
-    <Navbar />
-    <Home />
+    <div class="navbar">
+      <Navbar />
+    </div>
+    <div class="home">
+      <Home />
+    </div>
   </div>
 </template>
 
@@ -14,7 +18,7 @@ export default {
   name: 'App',
   components: {
     Home,
-    Navbar
+    Navbar,
   },
 }
 </script>
