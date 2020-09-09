@@ -34,13 +34,13 @@ export default {
 }
 
 #nav-container {
-  width: 45%;
+  width: 40%;
   height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 500;
   color: white;
   font-family: 'Orbitron', sans-serif;
@@ -52,6 +52,6 @@ export default {
 }
 
 .nav-item:hover {
-  background-color: #E48305;
+  color: #E9EC16;
 }
 </style>
