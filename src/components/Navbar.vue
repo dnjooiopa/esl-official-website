@@ -27,11 +27,14 @@ export default {
 
 #nav-container {
   width: 40%;
-  height: 50px;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.6rem;
+
+  font-size: 1.5rem;
+  font-weight: 400;
   color: white;
+  font-family: 'Orbitron', sans-serif;
 }
 </style>
