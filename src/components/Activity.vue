@@ -1,6 +1,6 @@
 <template>
   <div class="activity-container">
-    <div class="activity-title">Activity & Awards</div>
+    <div class="activity-title" v-on:click="onClick">Activity & Awards</div>
     
   </div>
 </template>
@@ -8,6 +8,13 @@
 <script>
 export default {
   name: 'Activity',
+  methods:{
+      onClick(){
+          alert("on click")
+      }
+  },
+  mounted() {
+  }
 }
 </script>
 
