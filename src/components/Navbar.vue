@@ -2,10 +2,18 @@
   <div>
     <div id="navbar">
       <div id="nav-container">
-        <a>Home</a>
-        <a>Activities & Awards</a>
-        <a>Members</a>
-        <a>Contact</a>
+        <div class="nav-item">
+          <a>Home</a>
+        </div>
+        <div class="nav-item">
+          <a>Activities & Awards</a>
+        </div>
+        <div class="nav-item">
+          <a>Members</a>
+        </div>
+        <div class="nav-item">
+          <a>Contact</a>
+        </div>
       </div>
     </div>
   </div>
@@ -17,7 +25,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #navbar {
   width: 100%;
   position: fixed;
@@ -26,7 +34,7 @@ export default {
 }
 
 #nav-container {
-  width: 40%;
+  width: 45%;
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -36,5 +44,14 @@ export default {
   font-weight: 500;
   color: white;
   font-family: 'Orbitron', sans-serif;
+}
+
+.nav-item{
+  height: 35px;
+  padding:  10px;
+}
+
+.nav-item:hover {
+  background-color: green;
 }
 </style>
