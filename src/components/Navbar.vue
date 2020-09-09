@@ -3,16 +3,16 @@
     <div id="navbar">
       <div id="nav-container">
         <div class="nav-item">
-          <a>Home</a>
+          Home
         </div>
         <div class="nav-item">
-          <a>Activities & Awards</a>
+          Activities & Awards
         </div>
         <div class="nav-item">
-          <a>Members</a>
+          Members
         </div>
         <div class="nav-item">
-          <a>Contact</a>
+          Contact
         </div>
       </div>
     </div>
@@ -34,7 +34,7 @@ export default {
 }
 
 #nav-container {
-  width: 40%;
+  width: 36%;
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -46,12 +46,13 @@ export default {
   font-family: 'Orbitron', sans-serif;
 }
 
-.nav-item{
+.nav-item {
   height: 35px;
-  padding:  10px;
+  padding: 10px;
 }
 
 .nav-item:hover {
-  color: #E9EC16;
+  color: #e9ec16;
+  cursor: pointer;
 }
 </style>
