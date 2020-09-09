@@ -21,7 +21,7 @@ export default {
 
 .brand {
   position: absolute;
-  margin-top: 360px;
+  margin-top: 310px;
 
   font-size: 2.1rem;
   font-weight: 900;
