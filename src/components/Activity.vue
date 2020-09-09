@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <h1>This is activity</h1>
+  <div class="activity-container">
+    <div class="activity-title">Activity & Awards</div>
+    
   </div>
 </template>
 
@@ -10,4 +11,16 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.activity-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 108px;
+}
+
+.activity-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  font-family: 'Orbitron', sans-serif;
+}
+</style>
