@@ -54,7 +54,7 @@ export default {
   flex-wrap: wrap;
   flex-direction: column;
   align-content: center;
-  margin-top: 108px;
+  margin-top: 120px;
 }
 
 .activity-title {
