@@ -16,7 +16,7 @@ export default {
   name: "Navbar",
   mounted() {
     window.onscroll = () => {
-      if (window.scrollY > 700) {
+      if (window.scrollY > 680) {
         this.isToggle = true;
       } else {
         this.isToggle = false;
