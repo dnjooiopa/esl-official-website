@@ -3,13 +3,17 @@
     <div class="activity-title">Activity & Awards</div>
     <br />
     <div class="slider-container">
-      <b-carousel :pause-hover="pauseHover" :interval="interval">
-        <b-carousel-item v-for="(carousel, i) in carousels" :key="i">
-          <section :class="`hero is-medium is-${carousel.color}`">
-            <div class="hero-body has-text-centered">
-              <h1 class="title">{{carousel.text}}</h1>
-            </div>
-          </section>
+      <b-carousel
+        :pause-hover="pauseHover"
+        :interval="interval"
+        :indicator="indicator"
+        :autoplay="autoplay"
+        :icon-size="iconSize"
+      >
+        <b-carousel-item class="slider-item" v-for="(carousel, i) in carousels" :key="i">
+          <div>
+            <div class="title">{{carousel.text}}</div>
+          </div>
         </b-carousel-item>
       </b-carousel>
     </div>
@@ -28,13 +32,16 @@ export default {
   data() {
     return {
       pauseHover: false,
-      interval: 3000,
+      interval: 5000,
+      indicator: false,
+      autoplay: false,
+      iconSize: "is-large",
       carousels: [
-        { text: "Slide 1", color: "primary" },
-        { text: "Slide 2", color: "info" },
-        { text: "Slide 3", color: "success" },
-        { text: "Slide 4", color: "warning" },
-        { text: "Slide 5", color: "danger" },
+        { text: "Slide 1" },
+        { text: "Slide 2" },
+        { text: "Slide 3" },
+        { text: "Slide 4" },
+        { text: "Slide 5" },
       ],
     };
   },
@@ -51,13 +58,28 @@ export default {
 }
 
 .activity-title {
+  text-align: center;
   font-size: 2.4rem;
-  font-weight:  700;
+  font-weight: 700;
   font-family: "Orbitron", sans-serif;
 }
 
 .slider-container {
-  width: 300px;
+  width: 800px;
   margin-bottom: 300px;
+}
+
+.slider-item {
+  display: flex;
+  justify-content: flex-start;
+  height: 400px;
+}
+
+.title {
+  margin-top: 150px;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: "Orbitron", sans-serif;
 }
 </style>
