@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div id="navbar">
-      <div id="nav-container">
-        <div class="nav-item">Home</div>
-        <div class="nav-item">Activities & Awards</div>
-        <div class="nav-item">Members</div>
-        <div class="nav-item">Contact</div>
+    <div class="navbar" :class="{'navbar-toggle' :isToggle}">
+      <div class="nav-container">
+        <div class="nav-item" :class="{'nav-item-toggle' :isToggle}">Home</div>
+        <div class="nav-item" :class="{'nav-item-toggle' :isToggle}">Activities & Awards</div>
+        <div class="nav-item" :class="{'nav-item-toggle' :isToggle}">Members</div>
+        <div class="nav-item" :class="{'nav-item-toggle' :isToggle}">Contact</div>
       </div>
     </div>
   </div>
@@ -16,34 +16,31 @@ export default {
   name: "Navbar",
   mounted() {
     window.onscroll = () => {
-      console.log(window.scrollY);
-      if (window.scrollY > 760) {
-        document.getElementById("navbar").style.position = "fixed"
-        document.getElementsByClassName("nav-item")[0].style.color = "black"
-        document.getElementsByClassName("nav-item")[1].style.color = "black"
-        document.getElementsByClassName("nav-item")[2].style.color = "black"
-        document.getElementsByClassName("nav-item")[3].style.color = "black"
-      }else{
-        document.getElementById("navbar").style.position = "absolute"
-        document.getElementsByClassName("nav-item")[0].style.color = "white"
-        document.getElementsByClassName("nav-item")[1].style.color = "white"
-        document.getElementsByClassName("nav-item")[2].style.color = "white"
-        document.getElementsByClassName("nav-item")[3].style.color = "white"
+      if (window.scrollY > 720) {
+        this.isToggle = true;
+      } else {
+        this.isToggle = false;
       }
+    };
+  },
+  data() {
+    return {
+      isToggle: false,
     };
   },
 };
 </script>
 
 <style scoped>
-#navbar {
+.navbar {
   width: 100%;
   position: absolute;
   display: flex;
   justify-content: center;
+  background: transparent;
 }
 
-#nav-container {
+.nav-container {
   width: 36%;
   height: 80px;
   display: flex;
@@ -64,5 +61,14 @@ export default {
 .nav-item:hover {
   color: #e9ec16;
   cursor: pointer;
+}
+
+.navbar-toggle {
+  position: fixed;
+  background: #e9e7e7;
+}
+
+.nav-item-toggle {
+  color: black;
 }
 </style>
