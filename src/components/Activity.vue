@@ -1,18 +1,21 @@
 <template>
   <div class="activity-container">
     <div class="activity-title">Activity & Awards</div>
-    <br />
     <div class="slider-container">
       <b-carousel
         :pause-hover="pauseHover"
-        :interval="interval"
-        :indicator="indicator"
         :autoplay="autoplay"
         :icon-size="iconSize"
+        :indicator-style="indicatorStyle"
       >
         <b-carousel-item class="slider-item" v-for="(carousel, i) in carousels" :key="i">
           <div>
-            <div class="title">{{carousel.text}}</div>
+            <div class="description-container">
+              <div class="description">{{carousel.text}}</div>
+            </div>
+            <div class="img-container">
+
+            </div>
           </div>
         </b-carousel-item>
       </b-carousel>
@@ -32,10 +35,9 @@ export default {
   data() {
     return {
       pauseHover: false,
-      interval: 6000,
-      indicator: true,
       autoplay: false,
       iconSize: "is-medium",
+      indicatorStyle: "is-lines",
       carousels: [
         { text: "Slide 1" },
         { text: "Slide 2" },
@@ -73,14 +75,20 @@ export default {
   display: flex;
   justify-content: flex-start;
   height: 540px;
-  background-color: #10a176;
+  background-color: #2dd3a1;
 }
 
-.title {
-  margin-top: 150px;
+.description-container {
+  width: 240px;
+  height: 100%;
   text-align: center;
+}
+
+.description {
+  margin-top: 150px;
   font-size: 1.4rem;
   font-weight: 500;
   font-family: "Orbitron", sans-serif;
+  color: black;
 }
 </style>
