@@ -52,7 +52,7 @@ export default {
 
 .activity-title {
   font-size: 2.4rem;
-  font-weight: 700;
+  font-weight:  700;
   font-family: "Orbitron", sans-serif;
 }
 
