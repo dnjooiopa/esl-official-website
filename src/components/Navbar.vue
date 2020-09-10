@@ -16,7 +16,7 @@ export default {
   name: "Navbar",
   mounted() {
     window.onscroll = () => {
-      if (window.scrollY > 720) {
+      if (window.scrollY > 700) {
         this.isToggle = true;
       } else {
         this.isToggle = false;
@@ -42,7 +42,7 @@ export default {
 
 .nav-container {
   width: 36%;
-  height: 80px;
+  height: 72px;
   display: flex;
   justify-content: space-between;
   align-items: center;
