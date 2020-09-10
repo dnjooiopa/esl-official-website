@@ -42,7 +42,7 @@ export default {
 
 .nav-container {
   width: 36%;
-  height: 72px;
+  height: 48px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,8 +54,8 @@ export default {
 }
 
 .nav-item {
-  height: 35px;
-  padding: 10px;
+  height: 30px;
+  padding: 0px 10px;
 }
 
 .nav-item:hover {

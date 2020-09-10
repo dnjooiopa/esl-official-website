@@ -56,7 +56,7 @@ export default {
   flex-wrap: wrap;
   flex-direction: column;
   align-content: center;
-  margin-top: 140px;
+  margin-top: 150px;
 }
 
 .activity-title {
@@ -67,14 +67,14 @@ export default {
 }
 
 .slider-container {
-  width: 1080px;
-  margin: 24px 0px 300px;
+  width: 1000px;
+  margin: 20px 0px 300px;
 }
 
 .slider-item {
   display: flex;
   justify-content: flex-start;
-  height: 540px;
+  height: 480px;
   background-color: #2dd3a1;
 }
 
