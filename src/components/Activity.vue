@@ -32,10 +32,10 @@ export default {
   data() {
     return {
       pauseHover: false,
-      interval: 5000,
-      indicator: false,
+      interval: 6000,
+      indicator: true,
       autoplay: false,
-      iconSize: "is-large",
+      iconSize: "is-medium",
       carousels: [
         { text: "Slide 1" },
         { text: "Slide 2" },
@@ -65,14 +65,15 @@ export default {
 }
 
 .slider-container {
-  width: 800px;
+  width: 1080px;
   margin-bottom: 300px;
 }
 
 .slider-item {
   display: flex;
   justify-content: flex-start;
-  height: 400px;
+  height: 540px;
+  background-color: #10a176;
 }
 
 .title {
