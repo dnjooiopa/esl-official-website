@@ -13,7 +13,6 @@
 </template>
 
 <script>
-//import EmployeeTable from './components/EmployeeTable'
 import Home from './components/Home'
 import Navbar from './components/Navbar'
 import Activity from './components/Activity'
