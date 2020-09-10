@@ -38,16 +38,17 @@ export default {
   display: flex;
   justify-content: center;
   background: transparent;
+  min-height: 28px;
 }
 
 .nav-container {
   width: 36%;
-  height: 48px;
+  height: 42px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 500;
   color: white;
   font-family: "Orbitron", sans-serif;
@@ -55,7 +56,6 @@ export default {
 
 .nav-item {
   height: 30px;
-  padding: 0px 10px;
 }
 
 .nav-item:hover {
