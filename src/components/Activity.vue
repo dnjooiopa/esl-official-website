@@ -54,7 +54,7 @@ export default {
   flex-wrap: wrap;
   flex-direction: column;
   align-content: center;
-  margin-top: 120px;
+  margin-top: 140px;
 }
 
 .activity-title {
@@ -66,7 +66,7 @@ export default {
 
 .slider-container {
   width: 1080px;
-  margin-bottom: 300px;
+  margin: 24px 0px 300px;
 }
 
 .slider-item {
