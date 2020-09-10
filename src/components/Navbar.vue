@@ -2,10 +2,10 @@
   <div>
     <div class="navbar" :class="{'navbar-toggle' :isToggle}">
       <div class="nav-container">
-        <div class="nav-item" :class="{'nav-item-toggle' :isToggle}">Home</div>
-        <div class="nav-item" :class="{'nav-item-toggle' :isToggle}">Activities & Awards</div>
-        <div class="nav-item" :class="{'nav-item-toggle' :isToggle}">Members</div>
-        <div class="nav-item" :class="{'nav-item-toggle' :isToggle}">Contact</div>
+        <div class="nav-item">Home</div>
+        <div class="nav-item">Activities & Awards</div>
+        <div class="nav-item">Members</div>
+        <div class="nav-item">Contact</div>
       </div>
     </div>
   </div>
@@ -65,10 +65,6 @@ export default {
 
 .navbar-toggle {
   position: fixed;
-  background: #e9e7e7;
-}
-
-.nav-item-toggle {
-  color: black;
+  background: #858a90;
 }
 </style>
