@@ -9,14 +9,12 @@
         :indicator-style="indicatorStyle"
       >
         <b-carousel-item class="slider-item" v-for="(carousel, i) in carousels" :key="i">
-          <div>
             <div class="description-container">
               <div class="description">{{carousel.text}}</div>
             </div>
-            <div class="img-container">
-
-            </div>
-          </div>
+            <span class="image">
+              <img src="../assets/topgun-2020.png" />
+            </span>
         </b-carousel-item>
       </b-carousel>
     </div>
