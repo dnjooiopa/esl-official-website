@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg:">
     This is navbar
   </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div>
+    <div class="mt-8">
       This is app component
     </div>
 
