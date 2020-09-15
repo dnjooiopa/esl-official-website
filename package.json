@@ -12,7 +12,6 @@
     "build-prod": "parcel build src/index.html"
   },
   "dependencies": {
-    "buefy": "^0.9.3",
     "vue": "^2.6.12",
     "vue-hot-reload-api": "^2.3.4"
   },
