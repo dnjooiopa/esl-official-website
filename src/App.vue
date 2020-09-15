@@ -1,13 +1,16 @@
 <template>
-  <div>this is app</div>
+  <div id="app">
+    <div>
+      This is app component
+    </div>
+
+  </div>
 </template>
 
 <script>
-
 export default {
   name: "App",
-  components: {
-  },
+  components: {},
 };
 </script>
 
