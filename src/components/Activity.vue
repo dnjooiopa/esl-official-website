@@ -1,9 +1,7 @@
 <template>
-<div>
-    <h1>
-        This is Activity
-    </h1>
-</div>
+  <div class="text-center mt-12">
+    <span class="text-3xl md:text-4xl">Activities</span>
+  </div>
 </template>
 
 <script>
@@ -12,5 +10,5 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 </style>
