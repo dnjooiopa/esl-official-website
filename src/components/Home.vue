@@ -1,9 +1,7 @@
 <template>
-  <div>
-    <img
-      class="absolute h-sm-custom w-full object-cover object-center lg:h-64"
-      src="../assets/images/home-img.jpg"
-    />
+  <div class="flex h-sm-custom lg:h-64">
+    <img class="w-full object-cover object-center" src="../assets/images/home-img.jpg" />
+    <div class="absolute brand text-white">Embedded System Laboratory</div>
   </div>
 </template>
 
@@ -16,6 +14,12 @@ export default {
 <style scoped>
 .h-sm-custom {
   height: 30rem;
+}
+
+.brand {
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 330px;
 }
 
 @media (min-width: 1024px) {
