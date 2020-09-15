@@ -1,70 +1,14 @@
 <template>
   <div>
-    <div class="navbar" :class="{'navbar-toggle' :isToggle}">
-      <div class="nav-container">
-        <div class="nav-item">Home</div>
-        <div class="nav-item">Activities & Awards</div>
-        <div class="nav-item">Members</div>
-        <div class="nav-item">Contact</div>
-      </div>
-    </div>
+    <h1>This is Navbar</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Navbar",
-  mounted() {
-    window.onscroll = () => {
-      if (window.scrollY > 680) {
-        this.isToggle = true;
-      } else {
-        this.isToggle = false;
-      }
-    };
-  },
-  data() {
-    return {
-      isToggle: false,
-    };
-  },
+  name: "Navbar"
 };
 </script>
 
 <style scoped>
-.navbar {
-  width: 100%;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  background: transparent;
-  min-height: 28px;
-}
-
-.nav-container {
-  width: 36%;
-  height: 42px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  font-size: 1rem;
-  font-weight: 500;
-  color: white;
-  font-family: "Orbitron", sans-serif;
-}
-
-.nav-item {
-  height: 30px;
-}
-
-.nav-item:hover {
-  color: #e9ec16;
-  cursor: pointer;
-}
-
-.navbar-toggle {
-  position: fixed;
-  background: #858a90;
-}
 </style>
