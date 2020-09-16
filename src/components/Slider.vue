@@ -1,14 +1,24 @@
 <template>
   <div class="flex flex-col items-center my-8">
-    <div class="max-w-xs sm:max-w-screen-sm md:max-w-screen-md md:mx-8 bg-white rounded overflow-x-hidden flex snap-x h-custom">
+    <div class="img-container bg-white rounded overflow-x-hidden flex snap-x">
       <div
-        class="snap-start w-full h-full flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 bg-blue-600"
+        class="snap-start w-full h-full flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 bg-blue-600 relative"
         id="slide-1"
-      >Slide 1</div>
+      >
+        <img
+          src="../assets/images/topgun-2020.jpg"
+          class="h-full w-full object-cover absolute inset-0 z-10"
+        />
+      </div>
       <div
-        class="snap-start w-full h-full flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 bg-green-600"
+        class="snap-start w-full h-full flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 bg-green-600 relative"
         id="slide-2"
-      >Slide 2</div>
+      >
+        <img
+          src="../assets/images/silicon-craft.jpg"
+          class="h-full w-full object-cover object-bottom absolute inset-0 z-10"
+        />
+      </div>
       <div
         class="snap-start w-full h-full flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 bg-red-600"
         id="slide-3"
@@ -80,14 +90,22 @@ export default {
   scroll-snap-align: start;
 }
 
-.h-custom {
-  height: 24rem;
+.img-container {
+  width: 300px;
+  height: 225px;
 }
 
-@media (min-width: 1024px) {
-  .h-custom {
-    height: 44rem;
+@media (min-width: 768px) {
+  .img-container {
+    width: 720px;
+    height: 540px;
+  }
+
+  @media (min-width: 1200px) {
+    .img-container {
+      width: 840px;
+      height: 540px;
+    }
   }
 }
-
 </style>
