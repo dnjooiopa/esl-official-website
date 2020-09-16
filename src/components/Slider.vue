@@ -2,7 +2,7 @@
   <div class="flex flex-col items-center my-8">
     <div class="img-container bg-white rounded overflow-x-hidden flex snap-x">
       <div
-        class="snap-start w-full h-full flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 bg-blue-600 relative"
+        class="snap-start w-full h-full flex flex-shrink-0 relative"
         id="slide-1"
       >
         <img
@@ -11,7 +11,7 @@
         />
       </div>
       <div
-        class="snap-start w-full h-full flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 bg-green-600 relative"
+        class="snap-start w-full h-full flex flex-shrink-0 relative"
         id="slide-2"
       >
         <img
@@ -20,19 +20,19 @@
         />
       </div>
       <div
-        class="snap-start w-full h-full flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 bg-red-600"
+        class="snap-start w-full h-full flex flex-shrink-0 bg-red-600"
         id="slide-3"
       >Slide 3</div>
       <div
-        class="snap-start w-full h-full flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 bg-orange-600"
+        class="snap-start w-full h-full flex flex-shrink-0 bg-orange-600"
         id="slide-4"
       >Slide 4</div>
       <div
-        class="snap-start w-full h-full flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 bg-purple-600"
+        class="snap-start w-full h-full flex flex-shrink-0 bg-purple-600"
         id="slide-5"
       >Slide 5</div>
       <div
-        class="snap-start w-full h-full flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 bg-black relative"
+        class="snap-start w-full h-full flex flex-shrink-0 bg-black relative"
         id="slide-6"
       >
         <img
