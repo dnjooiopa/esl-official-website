@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center my-8">
+  <div class="flex flex-col items-center my-4">
     <div class="img-container bg-white rounded overflow-x-hidden flex snap-x">
       <div class="snap-start w-full h-full flex flex-shrink-0 relative" id="slide-1">
         <img
@@ -25,7 +25,7 @@
       </div>
     </div>
 
-    <div class="flex mt-8">
+    <div class="flex mt-4">
       <a
         class="w-8 mr-1 h-8 text-gray-700 rounded-full bg-white flex justify-center items-center"
         href="#slide-1"
