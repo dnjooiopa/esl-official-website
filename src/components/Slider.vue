@@ -91,6 +91,13 @@ export default {
   height: 225px;
 }
 
+@media (min-width: 420px) {
+  .img-container {
+    width: 400px;
+    height: 300px;
+  }
+}
+
 @media (min-width: 768px) {
   .img-container {
     width: 720px;
